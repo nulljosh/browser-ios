@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="18" font-weight="600" fill="#1d1d1f">Browser iOS Architecture</text>
+
+  <!-- SwiftUI Layer -->
+  <rect x="50" y="60" width="700" height="80" rx="12" fill="#f5f5f7" stroke="#d2d2d7" stroke-width="1.5"/>
+  <text x="400" y="85" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="13" font-weight="600" fill="#1d1d1f">SwiftUI Chrome</text>
+
+  <rect x="70" y="100" width="110" height="30" rx="6" fill="#ffffff" stroke="#d2d2d7" stroke-width="1"/>
+  <text x="125" y="120" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="11" fill="#1d1d1f">BrowserView</text>
+
+  <rect x="200" y="100" width="110" height="30" rx="6" fill="#ffffff" stroke="#d2d2d7" stroke-width="1"/>
+  <text x="255" y="120" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="11" fill="#1d1d1f">TabSwitcher</text>
+
+  <rect x="330" y="100" width="110" height="30" rx="6" fill="#ffffff" stroke="#d2d2d7" stroke-width="1"/>
+  <text x="385" y="120" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="11" fill="#1d1d1f">AddressBar</text>
+
+  <rect x="460" y="100" width="110" height="30" rx="6" fill="#ffffff" stroke="#d2d2d7" stroke-width="1"/>
+  <text x="515" y="120" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="11" fill="#1d1d1f">Settings</text>
+
+  <rect x="590" y="100" width="130" height="30" rx="6" fill="#ffffff" stroke="#d2d2d7" stroke-width="1"/>
+  <text x="655" y="120" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="11" fill="#1d1d1f">Bookmarks/History</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="140" x2="400" y2="170" stroke="#86868b" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- WebKit Layer -->
+  <rect x="150" y="170" width="500" height="80" rx="12" fill="#e8f4fd" stroke="#0071e3" stroke-width="1.5"/>
+  <text x="400" y="195" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="13" font-weight="600" fill="#0071e3">WebKit (WKWebView)</text>
+
+  <rect x="180" y="210" width="130" height="30" rx="6" fill="#ffffff" stroke="#0071e3" stroke-width="1"/>
+  <text x="245" y="230" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="11" fill="#1d1d1f">Page Rendering</text>
+
+  <rect x="330" y="210" width="130" height="30" rx="6" fill="#ffffff" stroke="#0071e3" stroke-width="1"/>
+  <text x="395" y="230" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="11" fill="#1d1d1f">Content Blocker</text>
+
+  <rect x="480" y="210" width="130" height="30" rx="6" fill="#ffffff" stroke="#0071e3" stroke-width="1"/>
+  <text x="545" y="230" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="11" fill="#1d1d1f">Network Stack</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="250" x2="400" y2="280" stroke="#86868b" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- State Layer -->
+  <rect x="100" y="280" width="600" height="80" rx="12" fill="#f0faf0" stroke="#28c840" stroke-width="1.5"/>
+  <text x="400" y="305" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="13" font-weight="600" fill="#1d1d1f">State (@Observable AppState)</text>
+
+  <rect x="130" y="315" width="100" height="30" rx="6" fill="#ffffff" stroke="#28c840" stroke-width="1"/>
+  <text x="180" y="335" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="11" fill="#1d1d1f">TabManager</text>
+
+  <rect x="250" y="315" width="100" height="30" rx="6" fill="#ffffff" stroke="#28c840" stroke-width="1"/>
+  <text x="300" y="335" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="11" fill="#1d1d1f">Bookmarks</text>
+
+  <rect x="370" y="315" width="100" height="30" rx="6" fill="#ffffff" stroke="#28c840" stroke-width="1"/>
+  <text x="420" y="335" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="11" fill="#1d1d1f">History</text>
+
+  <rect x="490" y="315" width="120" height="30" rx="6" fill="#ffffff" stroke="#28c840" stroke-width="1"/>
+  <text x="550" y="335" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="11" fill="#1d1d1f">PrivacyManager</text>
+
+  <!-- Arrow down -->
+  <line x1="400" y1="360" x2="400" y2="390" stroke="#86868b" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Persistence -->
+  <rect x="150" y="390" width="500" height="60" rx="12" fill="#fff8f0" stroke="#ff9500" stroke-width="1.5"/>
+  <text x="400" y="415" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="13" font-weight="600" fill="#1d1d1f">Persistence (JSON Files)</text>
+
+  <rect x="180" y="425" width="120" height="20" rx="4" fill="#ffffff" stroke="#ff9500" stroke-width="1"/>
+  <text x="240" y="439" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="10" fill="#1d1d1f">browser_data.json</text>
+
+  <rect x="320" y="425" width="120" height="20" rx="4" fill="#ffffff" stroke="#ff9500" stroke-width="1"/>
+  <text x="380" y="439" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="10" fill="#1d1d1f">preferences.json</text>
+
+  <rect x="460" y="425" width="160" height="20" rx="4" fill="#ffffff" stroke="#ff9500" stroke-width="1"/>
+  <text x="540" y="439" text-anchor="middle" font-family="-apple-system, Helvetica" font-size="10" fill="#1d1d1f">crash_recovery.json</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#86868b"/>
+    </marker>
+  </defs>
+</svg>

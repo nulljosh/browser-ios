@@ -29,3 +29,13 @@ targets:
       INFOPLIST_FILE: Info.plist
       PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.browser-ios
       ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+  BrowseriOSTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Tests
+    dependencies:
+      - target: BrowseriOS
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.nulljosh.browser-ios.tests
+      GENERATE_INFOPLIST_FILE: YES
