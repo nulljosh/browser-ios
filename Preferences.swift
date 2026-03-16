@@ -35,7 +35,7 @@ struct SiteZoom: Codable, Identifiable, Sendable {
 
 struct Preferences: Codable, Sendable {
     var searchEngine: SearchEngine = .duckDuckGo
-    var homepage: String = "https://duckduckgo.com"
+    var homepage: String = "https://heyitsmejosh.com"
     var contentBlockerEnabled: Bool = true
     var httpsOnlyMode: Bool = false
     var autoClearOnQuit: Bool = false

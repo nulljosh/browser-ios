@@ -8,7 +8,7 @@ final class PreferencesTests: XCTestCase {
     func testDefaultValues() {
         let prefs = Preferences()
         XCTAssertEqual(prefs.searchEngine, .duckDuckGo)
-        XCTAssertEqual(prefs.homepage, "https://duckduckgo.com")
+        XCTAssertEqual(prefs.homepage, "https://heyitsmejosh.com")
         XCTAssertEqual(prefs.defaultZoom, 1.0)
         XCTAssertTrue(prefs.contentBlockerEnabled)
         XCTAssertFalse(prefs.httpsOnlyMode)
