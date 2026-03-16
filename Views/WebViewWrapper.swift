@@ -49,7 +49,10 @@ struct WebViewWrapper: UIViewRepresentable {
 
         private func observeProgress(for webView: WKWebView) {
             progressObservation = webView.observe(\.estimatedProgress, options: [.initial, .new]) { [weak self] webView, _ in
-                self?.appState.loadingProgress = webView.estimatedProgress
+                let progress = webView.estimatedProgress
+                Task { @MainActor in
+                    self?.appState.loadingProgress = progress
+                }
             }
         }
 
