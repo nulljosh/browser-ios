@@ -1,4 +1,4 @@
-![Browser](icon.svg)
+![Browser for iOS](icon.svg)
 
 # Browser for iOS
 
@@ -17,7 +17,7 @@ Native iOS web browser built on WebKit. No Chromium.
 - History search, autocomplete, find in page
 - Configurable search engine, favicon fetching
 
-## Build
+## Run
 
 ```bash
 xcodegen generate
@@ -26,10 +26,16 @@ xcodebuild -scheme BrowseriOS -destination 'platform=iOS Simulator,name=iPhone 1
 
 ## Roadmap
 
-- iCloud sync with macOS companion
-- Safari extension import
-- Passkey / WebAuthn support
+- [ ] iCloud sync with macOS companion
+- [ ] Safari extension import
+- [ ] Passkey / WebAuthn support
+
+## Changelog
+
+- v2.0.0 - Added tab pinning, suspension, and private browsing controls
+- v2.0.0 - Added content blocker with bundled easylist rules
+- v2.0.0 - Added reader mode and HTTPS-only automatic upgrades
 
 ## License
 
-MIT 2026, Joshua Trommel
+MIT 2026 Joshua Trommel
